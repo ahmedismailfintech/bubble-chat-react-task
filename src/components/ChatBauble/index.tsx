@@ -7,7 +7,7 @@ export default function ChatBauble() {
         setToggle(!toggle)
     }
     return (
-        <div >
+        <div>
             <ChatIcon onClick={handleToggle} />
             <ChatContainer toggle={toggle} />
         </div>
