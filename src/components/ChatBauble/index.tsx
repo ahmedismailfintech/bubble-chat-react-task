@@ -9,7 +9,7 @@ export default function ChatBauble() {
     return (
         <div>
             <ChatIcon onClick={handleToggle} />
-            <ChatContainer toggle={toggle} />
+            <ChatContainer toggle={toggle} accentColor="#ccc" title="ahmed" avatar="img_1.jpg" />
         </div>
     )
 }

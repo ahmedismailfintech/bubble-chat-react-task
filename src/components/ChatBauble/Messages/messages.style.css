@@ -1,8 +1,22 @@
 .message-container {
-  max-height: 500px;
-  min-height: 500px;
+  max-height: 400px;
+  min-height: 400px;
   background-color: #fff;
   overflow: auto;
   border-radius: 5px;
   padding-block: 10px;
+}
+
+.message-item {
+  background-color: #444;
+  color: #fff;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+}
+
+.message-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 4px;
 }

@@ -1,10 +1,27 @@
+.input-wrapper {
+  height: 45px;
+  position: relative;
+}
 input {
   width: 100%;
-  height: 45px;
+  height: 100%;
   border: transparent;
   background-color: #fff;
   border-radius: 4px;
   margin-top: 20px !important;
   outline: none;
   padding: 10px;
+}
+
+.attach-icon {
+  cursor: pointer;
+  right: 4px;
+  top: 28px;
+  position: absolute;
+  width: 30px;
+}
+
+[dir="rtl"] .attach-icon {
+  left: 4px;
+  right: inherit !important;
 }
