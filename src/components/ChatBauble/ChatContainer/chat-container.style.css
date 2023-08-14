@@ -1,0 +1,21 @@
+.chat-container {
+  position: fixed;
+  background-color: #c2e6ff;
+  width: 400px;
+  height: 600px;
+  margin: auto;
+  padding: 20px;
+  right: 80px;
+  bottom: 80px;
+  z-index: 1;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  transform-origin: bottom right;
+  transform: scale(0);
+  transition: all 0.4s ease;
+}
+
+.show-chat {
+  transform-origin: top left;
+  transform: scale(1);
+}
