@@ -25,6 +25,7 @@ export default function useInput({ handleSendMessage }: Props) {
   }
 
   const onSendMessage = (e: React.KeyboardEvent<HTMLInputElement>) => {
+
     if (e.code == 'Enter') {
       if (inputValue) {
         handleSendMessage({ type: 'text', content: inputValue })
@@ -32,11 +33,19 @@ export default function useInput({ handleSendMessage }: Props) {
       }
     }
   }
+  const onSend = () => {
+    if (inputValue) {
+      handleSendMessage({ type: 'text', content: inputValue })
+      setInputValue('')
+    }
+  }
+
   return {
     file_ref,
     onFileSelect,
     onSendMessage,
     setInputValue,
-    inputValue
+    inputValue,
+    onSend
   }
 }

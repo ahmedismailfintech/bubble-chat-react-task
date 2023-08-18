@@ -20,8 +20,19 @@ input {
   position: absolute;
   width: 30px;
 }
+.send-icon {
+  cursor: pointer;
+  right: 40px;
+  top: 28px;
+  position: absolute;
+  width: 30px;
+}
 
 [dir="rtl"] .attach-icon {
   left: 4px;
+  right: inherit !important;
+}
+[dir="rtl"] .send-icon {
+  left: 40px;
   right: inherit !important;
 }
